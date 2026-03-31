@@ -1,0 +1,5 @@
+/farms
+{
+  $include "farms/brand1_farm.any"
+  $include "farms/brand2_farm.any"
+}

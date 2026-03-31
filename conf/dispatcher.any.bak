@@ -1,0 +1,43 @@
+/farms
+{
+  /website
+  {
+    /clientheaders
+    {
+      "*"
+    }
+
+    /virtualhosts
+    {
+      "localhost"
+    }
+
+    /renders
+    {
+      /publish
+      {
+        /hostname "localhost"
+        /port "4503"
+      }
+    }
+
+    /filters
+    {
+      /0000 { /type "deny" /url "*" }
+
+      /0010 { /type "allow" /method "GET" /url "/content/mysite/*" }
+      /0020 { /type "allow" /method "GET" /url "/content/we-retail/*" }
+      /0030 { /type "allow" /method "GET" /url "/etc.clientlibs/*" }
+      /0040 { /type "allow" /method "GET" /url "/content/dam/*" }
+    }
+
+    /cache
+    {
+      /docroot "/opt/homebrew/var/www/html"
+      /rules
+      {
+        /0000 { /type "allow" /glob "*" }
+      }
+    }
+  }
+}

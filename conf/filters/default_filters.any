@@ -1,0 +1,26 @@
+
+    # Deny all first
+    /0001 { /type "deny" /url "*" }
+
+    # Allow pages
+    /0002 { /type "allow" /url "*.html" }
+
+    # Allow clientlibs
+    /0003 { /type "allow" /url "/etc.clientlibs/*" }
+
+    # Allow libs (needed for AEM JS, CSRF, ContextHub)
+    /0004 { /type "allow" /url "/libs/*" }
+
+    /0008 { /type "allow" /url "/apps/*" }
+
+    # Allow CSRF token
+    /0005 { /type "allow" /url "/libs/granite/csrf/token.json" }
+
+    # Allow core image servlet
+    /0006 { /type "allow" /url "*coreimg.*" }
+
+    # Allow DAM
+    /0007 { /type "allow" /url "/content/dam/*" }
+
+
+/1001 { /type "allow" /method "(GET|HEAD)" /url "/content/*.ssi.html*" }

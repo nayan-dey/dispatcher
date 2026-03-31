@@ -1,0 +1,4 @@
+
+/0031 { /type "allow" /url "*.nocache.html*" }
+
+/0033 { /type "allow" /url "/etc.clientlibs/*" }

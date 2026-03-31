@@ -1,0 +1,30 @@
+/brand1
+{
+  /virtualhosts
+  {
+    "brand1.local"
+    "brand1.local:8080"
+  }
+
+  /renders
+  {
+    /publish
+    {
+      /hostname "localhost"
+      /port "4503"
+    }
+  }
+
+  /filter
+  {
+    $include "../filters/default_filters.any"
+    $include "../filters/brand1_filters.any"
+  }
+
+  /cache
+  {
+    $include "../cache/brand1_cache.any"
+  }
+
+   
+}

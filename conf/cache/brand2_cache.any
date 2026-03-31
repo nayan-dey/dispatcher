@@ -1,0 +1,7 @@
+ 
+/docroot "/opt/homebrew/var/www/html/brand2"
+
+/rules
+{
+  /0000 { /glob "*" /type "allow" }
+}
